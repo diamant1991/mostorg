@@ -1,0 +1,1 @@
+function opcl(i){if("none"==$(i).css("display")){for(var s in mydivs)$(mydivs[s]).hide();$(i).show()}}var mydivs=new Array("#recommend-hits","#new","#sale");$(".tab-item").click(function(i){$(".tab-item").removeClass("active"),$(this).addClass("active")});
