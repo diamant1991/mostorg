@@ -2403,3 +2403,21 @@ body {
 
 b {
   font-weight: bold; }
+
+.news {
+  line-height: 1.4;
+  color: #333333; }
+  .news__name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333; }
+    .news__name:hover {
+      color: #0080c4; }
+  .news__date {
+    font-size: 12px;
+    margin-bottom: 15px;
+    margin-top: 5px; }
+  .news__text {
+    font-size: 13px; }
+  .news__item {
+    margin-bottom: 35px; }
