@@ -89,7 +89,7 @@ a {
   display: table-cell;
   vertical-align: bottom; }
 
-.middle, .header-link__icon, .header-link__text, .get-call__icon, .get-call__text, .social-list a, .breadcrumb-map .search, .breadcrumb-map ul {
+.middle, .header-link__icon, .header-link__text, .get-call__icon, .get-call__text, .social-list a, .breadcrumb-map .search, .breadcrumb-map ul, .page-list, .contacts__item.email .contacts-title, .contacts__item.email a {
   display: inline-block;
   vertical-align: middle; }
 
@@ -1825,7 +1825,7 @@ body {
         z-index: 2;
         background: #0080c4;
         left: 7px;
-        top: 11px; }
+        top: 8px; }
   .text-wrapp h3 {
     font-size: 18px;
     font-weight: bold; }
@@ -2063,4 +2063,343 @@ body {
   line-height: 40px;
   color: #fff;
   font-size: 12px;
+  font-weight: bold; }
+
+.subcategory {
+  color: #333333; }
+  .subcategory .text-wrapp {
+    font-size: 13px; }
+  .subcategory .item-title {
+    text-transform: uppercase;
+    margin-top: 30px; }
+  .subcategory__info {
+    font-size: 13px;
+    line-height: 1.4; }
+  .subcategory__header {
+    font-size: 14px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f3f3f3;
+    margin-bottom: 5px; }
+    .subcategory__header a {
+      color: #0080c4; }
+  .subcategory__item {
+    position: relative;
+    padding: 15px 15px 15px 165px;
+    min-height: 152px;
+    line-height: 1.5;
+    border-bottom: 1px solid #ebebeb;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    margin-bottom: 10px; }
+    .subcategory__item:hover {
+      -webkit-box-shadow: 0px 2px 12px 0px rgba(50, 50, 50, 0.3);
+      box-shadow: 0px 2px 12px 0px rgba(50, 50, 50, 0.3); }
+      .subcategory__item:hover .subcategory__name {
+        color: #0080c4; }
+  .subcategory__img {
+    width: 151px;
+    height: 151px;
+    position: absolute;
+    z-index: 2;
+    left: 2px;
+    top: 0; }
+  .subcategory__name {
+    font-size: 16px;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .subcategory__par {
+    font-size: 13px;
+    color: #858585;
+    margin-bottom: 15px; }
+  .subcategory__price {
+    font-size: 13px;
+    color: #858585; }
+    .subcategory__price span {
+      color: #0080c4;
+      font-weight: bold;
+      font-size: 16px; }
+
+.second-dotted {
+  margin: 30px 0; }
+
+.all-find {
+  float: left; }
+
+.sorting-variant {
+  float: right; }
+  .sorting-variant a span {
+    border-bottom: 1px dashed #0080c4; }
+  .sorting-variant a:after {
+    content: "";
+    background: url(../img/sort-arrow.png) no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 6px;
+    height: 5px; }
+
+.pagination {
+  text-align: center;
+  padding: 20px 0; }
+
+.prev-page {
+  float: left;
+  color: #808080;
+  font-size: 13px;
+  position: relative;
+  top: 9px; }
+
+.next-page {
+  float: right;
+  color: #808080;
+  font-size: 13px;
+  position: relative;
+  top: 9px; }
+
+.page-list li {
+  float: left;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 3px; }
+  .page-list li.active {
+    background: #0080c4;
+    color: #fff;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border-bottom-color: transparent; }
+    .page-list li.active a {
+      color: #fff;
+      border-bottom-color: transparent; }
+
+.page-list a {
+  color: #333333;
+  border-bottom: 1px dotted #333333; }
+
+.technical-table table {
+  width: 100%;
+  color: #333333;
+  font-family: "Roboto", Tahoma, sans-serif; }
+  .technical-table table td {
+    border-bottom: 2px solid #dfdfdf; }
+    .technical-table table td:first-child {
+      padding-left: 30px;
+      width: 75%;
+      padding-right: 15px; }
+  .technical-table table thead td {
+    height: 30px;
+    font-size: 11px;
+    background: #f2f2f2;
+    vertical-align: middle; }
+  .technical-table table tbody tr:hover td {
+    background: #0080c4;
+    color: #fff; }
+  .technical-table table tbody td {
+    font-size: 15px;
+    vertical-align: top;
+    padding: 15px 0; }
+
+.technical {
+  margin-top: 30px; }
+  .technical-title {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px; }
+  .technical-tel {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0080c4; }
+  .technical-text {
+    line-height: 1.4;
+    font-size: 13px;
+    color: #333333;
+    margin-top: 35px; }
+    .technical-text p {
+      margin-bottom: 20px; }
+  .technical ul {
+    font-size: 15px;
+    margin: 25px 0; }
+    .technical ul a {
+      color: #0080c4;
+      text-decoration: underline; }
+      .technical ul a:hover {
+        text-decoration: none; }
+    .technical ul li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 5px; }
+      .technical ul li:before {
+        content: "";
+        display: block;
+        width: 3.5px;
+        height: 3.5px;
+        position: absolute;
+        z-index: 2;
+        background: #0080c4;
+        left: 7px;
+        top: 9px; }
+
+.move-block {
+  margin: 25px 0; }
+  .move-block a {
+    font-size: 13px;
+    color: #808080; }
+  .move-block .back-catalog {
+    color: #0080c4;
+    text-decoration: underline;
+    margin-left: 20px; }
+
+.prev-block {
+  float: left; }
+
+.next-block {
+  float: right; }
+
+.card__carousel {
+  position: relative;
+  padding-right: 130px; }
+  .card__carousel .bx-wrapper {
+    border: 1px solid #f1f1f1; }
+
+.card__item {
+  height: 310px;
+  text-align: center;
+  position: relative; }
+
+.card__descr {
+  line-height: 1.4;
+  font-size: 13px; }
+  .card__descr .grey {
+    color: #9a9a9a; }
+
+.thumb {
+  width: 90px;
+  position: absolute;
+  z-index: 2;
+  right: 20px;
+  top: 0; }
+  .thumb a {
+    display: block;
+    margin-bottom: 18px; }
+    .thumb a.active .thumb__item {
+      border-color: #0080c4; }
+    .thumb a:last-child {
+      margin-bottom: 0; }
+  .thumb__item {
+    border: 1px solid #f1f1f1;
+    height: 92px;
+    text-align: center;
+    padding: 2px; }
+
+.price-item {
+  font-size: 26px;
+  color: #0080c4;
+  font-weight: bold; }
+
+.send-btn {
+  display: block;
+  width: 225px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #0080c4;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  margin-top: 25px; }
+
+.card-text {
+  color: #333333;
+  line-height: 1.4;
+  font-size: 14px;
+  margin-top: 20px; }
+  .card-text p {
+    margin-bottom: 25px; }
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px; }
+
+.similar {
+  border-bottom: 2px solid #f4f4f4; }
+  .similar .recommend-carousel {
+    padding-bottom: 0; }
+
+#scheme {
+  display: none; }
+
+.contacts__tab {
+  margin-top: 25px; }
+  .contacts__tab li {
+    float: left;
+    width: 115px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #0080c4;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 5px;
+    -webkit-border-radius: 7px 7px 0 0;
+    border-radius: 7px 7px 0 0;
+    border: 1px solid #ebebeb;
+    border-bottom: 0;
+    font-size: 16px; }
+    .contacts__tab li:hover, .contacts__tab li.active {
+      background: #0080c4;
+      color: #fff; }
+
+.contacts__list {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.4; }
+  .contacts__list ul {
+    margin-top: 10px; }
+    .contacts__list ul li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 10px; }
+      .contacts__list ul li:before {
+        content: "";
+        display: block;
+        width: 3.5px;
+        height: 3.5px;
+        position: absolute;
+        z-index: 2;
+        background: #0080c4;
+        left: 7px;
+        top: 9px; }
+
+.contacts-title {
+  color: #858585;
+  margin-bottom: 5px; }
+
+.contacts__item {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 40px; }
+  .contacts__item.email .contacts-title {
+    margin-bottom: 0; }
+  .contacts__item.email a {
+    color: #0080c4;
+    text-decoration: underline; }
+
+.contacts__icon {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 3px; }
+
+.contacts-tel {
+  font-weight: bold;
+  font-size: 20px;
+  color: #0080c4; }
+
+b {
   font-weight: bold; }
