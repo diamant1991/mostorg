@@ -1,0 +1,116 @@
+@media (max-width: 1199px) {
+  .nav__menu a {
+    padding: 0 15px; } }
+
+@media (max-width: 991px) {
+  .nav__menu a {
+    padding: 0 5px; }
+  .nav {
+    font-size: 14px; }
+  .nav__menu li:after {
+    content: none; }
+  .hidden-sm {
+    display: none !important; }
+  .main-news {
+    padding-left: 0; }
+  .viewed__item {
+    width: 33.3%; }
+  .footer__menu ul li:after {
+    content: none; }
+  .footer__menu {
+    font-size: 14px; } }
+
+@media (min-width: 768px) {
+  .visible-xs {
+    display: none !important; } }
+
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important; }
+  .main-slider__title {
+    font-size: 20px; }
+  .main-slider__descr {
+    background: none;
+    padding: 0;
+    bottom: 0; }
+  .main-slider__number {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    top: 50px;
+    left: 0px; }
+  .bx-wrapper .bx-controls-direction a {
+    width: 32px;
+    height: 32px;
+    background-size: contain; }
+  .bx-next {
+    bottom: 125px;
+    right: 0; }
+  .bx-prev {
+    right: 25px;
+    bottom: 95px; }
+  .owl-prev,
+  .owl-next {
+    display: none; }
+  .nav-tab {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+    bottom: 10px;
+    padding-left: 0;
+    padding-top: 0; }
+  .nav-tab li {
+    padding-right: 20px; }
+  .recommend__header {
+    padding-right: 0;
+    padding-bottom: 35px;
+    position: relative; }
+  .nav-tab li:after {
+    right: 10px; }
+  .item-title {
+    font-size: 18px; }
+  .main-about {
+    font-size: 13px;
+    line-height: 1.5; }
+  .footer > .container {
+    padding-left: 0;
+    padding-right: 0; }
+  .footer__menu {
+    border-top: 0; }
+  .footer {
+    border-top: 5px solid #808080; }
+  .footer__info {
+    display: block;
+    text-align: center; }
+    .footer__info > div {
+      margin-bottom: 20px; }
+      .footer__info > div:last-child {
+        margin-bottom: 0; }
+  .footer__menu ul {
+    display: block; }
+  .footer__menu {
+    padding: 0 15px; }
+    .footer__menu a {
+      display: block;
+      height: 40px;
+      line-height: 40px;
+      padding-left: 25px;
+      background: #f8f8f8;
+      border: 2px solid #e7e7e7;
+      border-top: 1px solid #e7e7e7;
+      border-bottom: 1px solid #e7e7e7;
+      -webkit-border-radius: 6px;
+      border-radius: 6px;
+      position: relative; }
+      .footer__menu a:after {
+        content: "";
+        background: url(../img/footer-arrow.png) no-repeat;
+        width: 8px;
+        height: 12px;
+        position: absolute;
+        z-index: 2;
+        right: 15px;
+        top: 50%;
+        margin-top: -6px; } }
