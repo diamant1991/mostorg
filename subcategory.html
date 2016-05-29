@@ -166,13 +166,24 @@
     		</div>
     	</div>
     </div>
+    
+    <div class="mobile-search visible-xs">
+    	<div class="container">
+    		<div class="search">
+    		  <form action="">
+    		    <input type="search" placeholder="Поиск" class="search__input">
+    		    <input type="submit" value="" class="search__submit">
+    		  </form>
+    		</div>
+    	</div>
+    </div>
     <div class="content">
       <div class="container">
         <div class="dotted"></div>
         <div class="content__wrapp clearfix">
           <div class="col-md-3">
             <div class="row">
-              <aside class="sidebar-left">
+              <aside class="sidebar-left hidden-xs">
                 <div class="search">
                   <form action="">
                     <input type="search" placeholder="Поиск" class="search__input">
@@ -374,7 +385,7 @@
                         </a>
                       </div>
                       <div class="pagination clearfix">
-                        <a href="#" class="prev-page">› Предыдущая</a>
+                        <a href="#" class="prev-page hidden-xs">› Предыдущая</a>
                         <ul class="page-list clearfix">
                           <li class="active">
                             <a href="#">1</a>
@@ -395,14 +406,14 @@
                             <a href="#">6</a>
                           </li>
                           <li>
-                            <a href="#">7</a>
+                            <a href="#" class="hidden-xs">7</a>
                           </li>
                           <li>...</li>
                           <li>
                             <a href="#">35</a>
                           </li>
                         </ul>
-                        <a href="#" class="next-page">Следующая  ›</a>
+                        <a href="#" class="next-page hidden-xs">Следующая  ›</a>
                       </div>
                       <div class="dotted second-dotted"></div>
                     </div>
@@ -475,12 +486,53 @@
                           Прежде, чем купить товары нашей компании, Вы можете задать интересующие Вас вопросы нашим сотрудникам по телефонам:
                         </p>
                         <p class="technical-tel">
-                          <span>+7 (495) 748-10-68</span>,   
-                          <psan>+7 (495) 974-60-16</psan>.
+                          <span>+7 (495) 748-10-68,</span>   
+                          <span>+7 (495) 974-60-16 .</span>
                         </p>
                       </div>
                     </div>
                   </div>
+                </div>
+                <div class="mobile-news visible-xs">
+                  <div class="side-dot"></div>
+                  <div class="sidebar-news">
+                    <div class="item-title">Новости</div>
+                      <div class="main-news__item">
+                        <div class="main-news__date">
+                          21.02.2016
+                        </div>
+                        <a href="#" class="main-news__link">
+                          <div class="main-news__title">Заголовок новости</div>
+                          <div class="main-news__descr">
+                            Наша продукция пользуется устойчивым и стабильным спросом среди покупателей. 
+                          </div>
+                        </a>
+                      </div>
+                      <div class="main-news__item">
+                        <div class="main-news__date">
+                          21.02.2016
+                        </div>
+                        <a href="#" class="main-news__link">
+                          <div class="main-news__title">Заголовок новости</div>
+                          <div class="main-news__descr">
+                            Наша продукция пользуется устойчивым и стабильным спросом среди покупателей. 
+                          </div>
+                        </a>
+                      </div>
+                      <div class="main-news__item">
+                        <div class="main-news__date">
+                          21.02.2016
+                        </div>
+                        <a href="#" class="main-news__link">
+                          <div class="main-news__title">Заголовок новости</div>
+                          <div class="main-news__descr">
+                            Наша продукция пользуется устойчивым и стабильным спросом среди покупателей. 
+                          </div>
+                        </a>
+                      </div>
+                      <a href="#" class="basic-link all-news">Все новости</a>
+                  </div>
+                  <div class="side-dot"></div>
                 </div>
                 <div class="info-block">
                   <div class="info-icon">
@@ -538,7 +590,7 @@
       </div>
       <div class="footer__call visible-xs">
         <div class="container">
-          <a href="#" class="footer-call-btn">
+          <a href="#" class="footer-call-btn" data-toggle="modal" data-target="#get-call">
             <div class="table-block">
               <div class="block-vertical">
                 <span>

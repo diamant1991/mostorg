@@ -166,13 +166,24 @@
     		</div>
     	</div>
     </div>
+    
+    <div class="mobile-search visible-xs">
+    	<div class="container">
+    		<div class="search">
+    		  <form action="">
+    		    <input type="search" placeholder="Поиск" class="search__input">
+    		    <input type="submit" value="" class="search__submit">
+    		  </form>
+    		</div>
+    	</div>
+    </div>
     <div class="content">
       <div class="container">
         <div class="dotted"></div>
         <div class="content__wrapp clearfix">
           <div class="col-md-3">
             <div class="row">
-              <aside class="sidebar-left">
+              <aside class="sidebar-left hidden-xs">
                 <div class="search">
                   <form action="">
                     <input type="search" placeholder="Поиск" class="search__input">
@@ -323,7 +334,7 @@
                             </div>
                           </li>
                         </ul>
-                        <div id="card-pager" class="thumb">
+                        <div id="card-pager" class="thumb hidden-xs">
                           <a data-slide-index="0" href="">
                             <div class="thumb__item">
                               <div class="table-block">
@@ -504,7 +515,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="move-block clearfix">
+                <div class="move-block hidden-xs clearfix">
                   <div class="prev-block">
                     <a href="#">› Предыдущий</a>
                     <a href="#" class="back-catalog">Вернуться в каталог</a>
@@ -512,6 +523,47 @@
                   <div class="next-block">
                     <a href="#">Следующий ›</a>
                   </div>
+                </div>
+                <div class="mobile-news visible-xs">
+                  <div class="side-dot"></div>
+                  <div class="sidebar-news">
+                    <div class="item-title">Новости</div>
+                      <div class="main-news__item">
+                        <div class="main-news__date">
+                          21.02.2016
+                        </div>
+                        <a href="#" class="main-news__link">
+                          <div class="main-news__title">Заголовок новости</div>
+                          <div class="main-news__descr">
+                            Наша продукция пользуется устойчивым и стабильным спросом среди покупателей. 
+                          </div>
+                        </a>
+                      </div>
+                      <div class="main-news__item">
+                        <div class="main-news__date">
+                          21.02.2016
+                        </div>
+                        <a href="#" class="main-news__link">
+                          <div class="main-news__title">Заголовок новости</div>
+                          <div class="main-news__descr">
+                            Наша продукция пользуется устойчивым и стабильным спросом среди покупателей. 
+                          </div>
+                        </a>
+                      </div>
+                      <div class="main-news__item">
+                        <div class="main-news__date">
+                          21.02.2016
+                        </div>
+                        <a href="#" class="main-news__link">
+                          <div class="main-news__title">Заголовок новости</div>
+                          <div class="main-news__descr">
+                            Наша продукция пользуется устойчивым и стабильным спросом среди покупателей. 
+                          </div>
+                        </a>
+                      </div>
+                      <a href="#" class="basic-link all-news">Все новости</a>
+                  </div>
+                  <div class="side-dot"></div>
                 </div>
                 <div class="info-block">
                   <div class="info-icon">
@@ -569,7 +621,7 @@
       </div>
       <div class="footer__call visible-xs">
         <div class="container">
-          <a href="#" class="footer-call-btn">
+          <a href="#" class="footer-call-btn" data-toggle="modal" data-target="#get-call">
             <div class="table-block">
               <div class="block-vertical">
                 <span>
@@ -730,11 +782,19 @@
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
   <script>
-    $('#card-carousel').bxSlider({
-      pagerCustom: '#card-pager',
-      controls: false,
-      mode: 'fade'
-    });
+    if (window.matchMedia("(min-width: 768px)").matches) {
+      $('#card-carousel').bxSlider({
+        pagerCustom: '#card-pager',
+        controls: false,
+        mode: 'fade'
+      });
+    } else {
+      $('#card-carousel').bxSlider({
+        mode: 'fade',
+        controls: false
+      });
+    }
+    
     $('#similar-products').owlCarousel({
       loop:true,
       margin: 0,

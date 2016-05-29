@@ -166,13 +166,24 @@
     		</div>
     	</div>
     </div>
+    
+    <div class="mobile-search visible-xs">
+    	<div class="container">
+    		<div class="search">
+    		  <form action="">
+    		    <input type="search" placeholder="Поиск" class="search__input">
+    		    <input type="submit" value="" class="search__submit">
+    		  </form>
+    		</div>
+    	</div>
+    </div>
     <div class="content">
       <div class="container">
         <div class="dotted"></div>
         <div class="content__wrapp clearfix">
           <div class="col-md-3">
             <div class="row">
-              <aside class="sidebar-left">
+              <aside class="sidebar-left hidden-xs">
                 <div class="search">
                   <form action="">
                     <input type="search" placeholder="Поиск" class="search__input">
@@ -272,7 +283,48 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem iure, eligendi incidunt officiis facere quas veritatis veniam quam beatae asperiores molestiae corrupti nam omnis eveniet repellendus animi quisquam placeat natus. Eligendi, velit, quas. Quisquam consectetur consequatur nobis facilis corporis reprehenderit impedit accusantium in minus illum atque fuga, fugiat odit amet dolorum iusto error eos deserunt ad vel sed dignissimos alias, eligendi. Odio accusamus, modi id voluptatibus dolorem dicta iusto repudiandae ea perspiciatis, ducimus dolores aperiam et, animi quisquam excepturi fugiat nemo! Doloribus ullam est similique itaque non nostrum nemo animi velit eveniet amet facilis soluta ratione praesentium odio dolores eligendi accusamus, ipsam modi minima atque ipsa beatae aliquid. Odio, ab tenetur officiis similique fuga aut dolor labore voluptatem numquam dolore esse incidunt, asperiores, consequuntur maxime doloremque sed tempore dignissimos minus perspiciatis beatae. Non, consequatur aut doloribus dolorum nobis odio vel cupiditate repudiandae harum quae ullam quos sequi modi quis amet necessitatibus aspernatur a recusandae saepe pariatur, fugiat in assumenda consequuntur laudantium. Aspernatur consequatur dolor veniam, possimus eveniet aliquam rem provident, libero facere repellat vero soluta expedita earum quas exercitationem accusamus iure excepturi illum molestiae ducimus! Corrupti reiciendis iusto incidunt ex praesentium neque voluptate ullam voluptas quod, repudiandae inventore, ipsa culpa!
                   </p>
                 </div>
-                <div class="dotted single-dotted"></div>
+                <div class="dotted single-dotted hidden-xs"></div>
+                <div class="mobile-news visible-xs">
+                  <div class="side-dot"></div>
+                  <div class="sidebar-news">
+                    <div class="item-title">Новости</div>
+                      <div class="main-news__item">
+                        <div class="main-news__date">
+                          21.02.2016
+                        </div>
+                        <a href="#" class="main-news__link">
+                          <div class="main-news__title">Заголовок новости</div>
+                          <div class="main-news__descr">
+                            Наша продукция пользуется устойчивым и стабильным спросом среди покупателей. 
+                          </div>
+                        </a>
+                      </div>
+                      <div class="main-news__item">
+                        <div class="main-news__date">
+                          21.02.2016
+                        </div>
+                        <a href="#" class="main-news__link">
+                          <div class="main-news__title">Заголовок новости</div>
+                          <div class="main-news__descr">
+                            Наша продукция пользуется устойчивым и стабильным спросом среди покупателей. 
+                          </div>
+                        </a>
+                      </div>
+                      <div class="main-news__item">
+                        <div class="main-news__date">
+                          21.02.2016
+                        </div>
+                        <a href="#" class="main-news__link">
+                          <div class="main-news__title">Заголовок новости</div>
+                          <div class="main-news__descr">
+                            Наша продукция пользуется устойчивым и стабильным спросом среди покупателей. 
+                          </div>
+                        </a>
+                      </div>
+                      <a href="#" class="basic-link all-news">Все новости</a>
+                  </div>
+                  <div class="side-dot"></div>
+                </div>
                 <div class="info-block">
                   <div class="info-icon">
                     <img src="img/info.png" alt="">
@@ -321,7 +373,7 @@
       </div>
       <div class="footer__call visible-xs">
         <div class="container">
-          <a href="#" class="footer-call-btn">
+          <a href="#" class="footer-call-btn" data-toggle="modal" data-target="#get-call">
             <div class="table-block">
               <div class="block-vertical">
                 <span>
