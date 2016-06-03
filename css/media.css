@@ -11,6 +11,10 @@
   .footer__menu ul li:after {
     right: -15px; } }
 
+@media (min-width: 992px) {
+  .search {
+    width: 80%; } }
+
 @media (max-width: 991px) {
   .nav__menu a {
     padding: 0 5px; }
